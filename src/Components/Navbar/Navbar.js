@@ -1,13 +1,16 @@
 import './Navbar.css';
 
+
 function Navbar() {
   return (
     <div>
       <div className="header">
-        <p className="name">SWIFT</p>
+        <p className="name">YATRI.COM</p>
       <div>
-        <a className="link" href="/login">LOGIN</a>
-        <a className="link" href="/products">PRODUCTS</a>
+        <a href="">LOGIN</a>
+        <a href="">SIGNUP</a>
+        <a href="">BOOK A FLIGHT</a>
+        <a href="">PAYMENT</a>
       </div>
       </div>
     </div>
