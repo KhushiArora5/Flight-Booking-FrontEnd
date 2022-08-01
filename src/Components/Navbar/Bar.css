@@ -4,7 +4,7 @@
     margin: 0%;
 }
 
-.header
+.bheader
 {
     display: flex;
     flex-direction: row;
@@ -14,7 +14,7 @@
     background-color: #1178b8;
 }
 
-.name
+.bname
 {
     font-family: 'Poppins', sans-serif;
     color: #ffc820;
@@ -24,7 +24,7 @@
     display: flex;
 }
 
-.plane
+.bplane
 {
     width: 40px; 
     height: 40px; 
@@ -32,7 +32,7 @@
     fill: #ffc820;
 }
 
-.links
+.blinks
 {
     text-decoration: none; 
     color: #ffc820;
