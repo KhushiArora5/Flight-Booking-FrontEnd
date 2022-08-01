@@ -19,8 +19,17 @@
     font-family: 'Poppins', sans-serif;
     color: #ffc820;
     font-size: 30px;
-    font-weight: 900;
+    font-weight: 600;
     margin-left: 20px;
+    display: flex;
+}
+
+.plane
+{
+    width: 40px; 
+    height: 40px; 
+    padding-left: 10px; 
+    fill: #ffc820;
 }
 
 a
@@ -28,12 +37,12 @@ a
     text-decoration: none; 
     color: #ffc820;
     font-family: 'Poppins', sans-serif;
-    font-weight: 900;
+    font-weight: 500;
     font-size: 20px;
-    padding: 10px;
+    padding: 5px;
     text-align: center;
     text-decoration: none;
-    background-color: rgb(253, 253, 245);
-    border-radius: 25px;
+    background-color: rgb(251, 251, 233);
+    border-radius: 5px;
     margin: 2px;
 }

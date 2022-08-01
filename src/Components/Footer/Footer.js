@@ -3,7 +3,7 @@ import './Footer.css';
 function Footer() {
   return (
     <div>
-    <div className="footer">
+    <div className="footer text-center">
       <span>Connect Us On</span> 
       <svg className="icon"
       xmlns="http://www.w3.org/2000/svg" 

@@ -11,14 +11,14 @@ function Home() {
     <img className="pic" src={box} />
     </div>
     <div className="bg">
-      <div className="wel">WELCOME TRAVELERS</div>
-      <div className="info">
+      <div className="wel text-center underline decoration-double">WELCOME TRAVELERS</div>
+      <div className="info text-center">
          <p>
             To start your adventure, firstly you have to create
             an account by clicking on signup button.So that, you can get updates on new flights
             and if you are already a member, do login.
         </p><br/>     
-        <h1 className="font-black">LETS THE ADVENTURE START</h1>
+        <h1 className="font-black text-center underline decoration-double">LETS THE ADVENTURE START</h1>
       </div>
     </div>
         <Footer />
