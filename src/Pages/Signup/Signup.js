@@ -4,7 +4,6 @@ import axios from 'axios';
 
 function Signup() {
     const [firstname, setFirst] = useState();
-    const [middlename, setMiddle] = useState();
     const [lastname, setLast] = useState();
     const [phoneno, setPhone] = useState();
     const [useremail, setEmail] = useState();
@@ -13,7 +12,6 @@ function Signup() {
     const handleSignup = async () => {
         const user = {
             firstname,
-            middlename,
             lastname,
             phoneno,
             useremail,
@@ -46,7 +44,7 @@ function Signup() {
                         </div>
                         <div>
                             <div className="flex -mx-3">
-                                <div className="w-1/2 px-3 mb-5">
+                                <div className="w-full px-3 mb-5">
                                     <label className="text-xs font-semibold px-1">First Name</label>
                                     <div className="flex">
                                         <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
@@ -55,18 +53,9 @@ function Signup() {
                                         }} className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-400" /> 
                                     </div>
                                 </div>
-                                <div className="w-1/2 px-3 mb-5">
-                                    <label className="text-xs font-semibold px-1">Middle Name</label>
-                                    <div className="flex">
-                                        <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
-                                        <input type="text" onChange={(e) =>{
-                                            setMiddle(e.target.value);
-                                        }} className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-400" /> 
-                                    </div>
-                                </div>
                             </div>
                             <div className="flex -mx-3">
-                                <div className="w-1/2 px-3 mb-5">
+                                <div className="w-full px-3 mb-5">
                                     <label className="text-xs font-semibold px-1">Last Name</label>
                                     <div className="flex">
                                         <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
@@ -75,10 +64,12 @@ function Signup() {
                                         }} className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-400" />
                                     </div>
                                 </div>
+                            </div>
+                            <div className="flex -mx-3">
                                 <div className="w-full px-3 mb-5">
                                     <label className="text-xs font-semibold px-1">Phone No.</label>
                                     <div className="flex">
-                                        <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-email-outline text-gray-400 text-lg"></i></div>
+                                        <div className="w-10 z-10 pl-1 text-center pointer-events-none flex items-center justify-center"><i className="mdi mdi-account-outline text-gray-400 text-lg"></i></div>
                                         <input type="text" onChange={(e) =>{
                                             setPhone(e.target.value);
                                         }} className="w-full -ml-10 pl-10 pr-3 py-2 rounded-lg border-2 border-gray-200 outline-none focus:border-sky-400" />

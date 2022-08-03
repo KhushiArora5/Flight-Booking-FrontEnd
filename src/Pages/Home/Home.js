@@ -14,19 +14,19 @@ function Home() {
       </div>
     </div>
     <div className="bg">
-      <div className="wel text-center underline decoration-double">WELCOME TRAVELERS</div>
-      <div className="info text-center">
+      <div className="wel underline decoration-double">WELCOME TRAVELERS</div>
+      <div className="info">
          <p>
             To start your adventure, firstly you have to create
             an account by clicking on signup button.So that, you can get updates on new flights
             and if you are already a member, do remeber to login.
         </p><br/>     
-        <h1 className="font-black text-center underline decoration-double">LETS THE ADVENTURE START</h1>
+        <h1 className="font-black underline decoration-double">LETS THE ADVENTURE START</h1>
       </div>
       <hr/>
       <div>
-      <div className="wel text-center underline decoration-double">YATRI.COM</div>
-      <div className="info text-center">
+      <div className="wel underline decoration-double">YATRI.COM</div>
+      <div className="info">
         <p>
         On Yatri.com, you'll find cheap flights for domestic and international travel. 
         Since airlines change flight prices constantly, sign up for Fare Alerts and 
