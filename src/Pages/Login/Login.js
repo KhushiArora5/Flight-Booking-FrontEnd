@@ -6,7 +6,7 @@ import axios from 'axios';
 function Login() {
     const [useremail, setEmail] = useState();
     const [password, setPass] = useState();
-    const handleLogin = async () => {
+    async function handleLogin() {
         const user = {
             useremail,
             password,
@@ -14,8 +14,9 @@ function Login() {
           await axios.post("http://localhost:4000/api/login", user).then(function (response) {
           if(response.data.token)
           {
+            console.log(response.data);
             localStorage.setItem("token",response.data.token);
-            window.location.href = "/";
+            window.location.href = "/home";
           }
       }).catch(function(error){
         console.log(error);
@@ -65,7 +66,7 @@ function Login() {
             <div className="w-full md:w-full px-3 mb-6">
                 <button onClick={ ()=>{
                     handleLogin();
-                }} className="appearance-none block w-full bg-yellow-400 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-yellow-500 focus:outline-none focus:bg-white focus:border-gray-500">Sign in</button>
+                }} className="appearance-none block w-full bg-yellow-400 text-gray-100 font-bold border border-gray-200 rounded-lg py-3 px-3 leading-tight hover:bg-yellow-500 focus:outline-none focus:border-gray-500">Sign in</button>
             </div>
             <div className="mx-auto -mb-6 pb-1">
                 <span className="text-center text-xs text-gray-700">or sign up with</span>

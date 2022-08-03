@@ -20,9 +20,8 @@ function Signup() {
             password
           };
           await axios.post("http://localhost:4000/api/signup", user).then(function (response) {
-          if(response.data.token)
+          if(response.data)
           {
-            localStorage.setItem("token",response.data.token);
             window.location.href = "/login";
           }
       }).catch(function(error){
