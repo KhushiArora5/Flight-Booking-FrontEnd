@@ -12,6 +12,14 @@
     padding-top: 10px;
 }
 
+.fdata
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    
+}
+
 .finfo
 {
     padding-top: 10px;
@@ -22,10 +30,24 @@
 
 .table
 {
-    width: 30%;
+    width: 200px;
     font-family: 'Poppins',sans-serif;
     border: 2px solid #c79d21;
     margin-left: 20px;
     margin-top: 10px;
-    padding: 20px;
+    padding-left: 20px;
+}
+
+.tt
+{
+    padding-top: 10px;
+    font-size: 20px;
+    font-family: 'Poppins',sans-serif;
+}
+
+.flines
+{
+    height: 600px;
+    width: 100%;
+    padding: 30px;
 }

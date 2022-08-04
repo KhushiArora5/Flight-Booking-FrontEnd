@@ -1,0 +1,48 @@
+*
+{
+    padding: 0%;
+    margin: 0%;
+}
+
+.pheader
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    background-color: #1178b8;
+}
+
+.pname
+{
+    font-family: 'Poppins', sans-serif;
+    color: #ffc820;
+    font-size: 30px;
+    font-weight: 600;
+    margin-left: 20px;
+    display: flex;
+}
+
+.pplane
+{
+    width: 40px; 
+    height: 40px; 
+    padding-left: 10px; 
+    fill: #ffc820;
+}
+
+.plinks
+{
+    text-decoration: none; 
+    color: #ffc820;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 5px;
+    text-align: center;
+    text-decoration: none;
+    background-color: rgb(251, 251, 233);
+    border-radius: 5px;
+    margin: 2px;
+}
