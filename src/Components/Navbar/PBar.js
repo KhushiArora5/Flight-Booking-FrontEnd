@@ -14,7 +14,6 @@ function PBar() {
       <div>
         <a className="plinks" href="/">HOME</a>
         <a className="plinks" href="/flight">INFO.</a>
-        <a className="plinks" href="/bookflight">BOOK A FLIGHT</a>
       </div>
       </div>
     </div>

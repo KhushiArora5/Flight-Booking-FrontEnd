@@ -5,16 +5,9 @@ function Book() {
     return (
         <div>
             <BookBar />
-            <div className="bg">
-                <div className="p-2.5">
-                    <div className="search">
-                        <div className="searchbtn">
-                            <button className="bbtn">Return</button>
-                            <button className="bbtn">One-Way</button>
-                            <button className="bbtn">Multi-City</button>
-                        </div>
-                    </div>
-                </div>
+            <div>
+                <h1 className="btitle text-center underline decoration-double">THIS FLIGHT HAS BEEN BOOKED FOR YOU.</h1>
+                <p className="binfo">Click on Payment Button to proceed with it.</p>
             </div>
         </div>
     );

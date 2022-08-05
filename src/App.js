@@ -5,6 +5,7 @@ import Signup from './Pages/Signup/Signup';
 import Book from './Pages/Book/Book';
 import Flight from "./Pages/Flights/Flight";
 import Pay from "./Pages/Payment/Pay";
+import Detail from "./Pages/Flights/detail";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route exact path="/bookflight" element={<Book />}></Route>
         <Route exact path="/flight" element={<Flight />}></Route>
         <Route exact path="/pay" element={<Pay />}></Route>
+        <Route exact path="/flight/:id" element={<Detail />}></Route>
       </Routes>
     </Router>
     </div>

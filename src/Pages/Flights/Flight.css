@@ -30,7 +30,7 @@
 
 .table
 {
-    width: 200px;
+    width: 250px;
     font-family: 'Poppins',sans-serif;
     border: 2px solid #c79d21;
     margin-left: 20px;
@@ -43,6 +43,13 @@
     padding-top: 10px;
     font-size: 20px;
     font-family: 'Poppins',sans-serif;
+}
+
+.bb
+{
+    border: 2px solid #c79d21;
+    background-color: #1178b8;
+    color: white;
 }
 
 .flines
