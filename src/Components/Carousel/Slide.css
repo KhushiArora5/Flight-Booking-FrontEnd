@@ -1,0 +1,22 @@
+.each-slide-effect > div {
+    display: flex;
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    height: 100px;
+    width: 100%;
+  }
+  
+  .each-slide-effect span {
+    padding: 20px;
+    font-size: 20px;
+    background: #efefef;
+    text-align: start;
+  }
+
+  .d
+  {
+    background-image: url("./delhi.jpg") no-repeat;
+    height: 100px;
+    width: 100%;
+  }

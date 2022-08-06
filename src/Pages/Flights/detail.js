@@ -25,12 +25,23 @@ export default function Detail() {
         fetchData();
     }, []);
 
+    async function handleBook() {
+          await axios.post(`http://localhost:4000/api/bookflight/${id}`, {}).then(function (response) {
+          if(response.data)
+          {
+            window.location.href = "/book";
+          }
+      }).catch(function(error){
+        console.log(error);
+      })
+    }
+
     return (
         <div>
             <Bar />
-            <div>
+            <div className="bg">
                 <h1 className="ftitle text-center underline decoration-double">DETAILS OF THE FLIGHT</h1>
-                <div>
+                <div className="info">
                     <div>
                         Airline Name: {flight.airline}
                     </div>
@@ -46,6 +57,9 @@ export default function Detail() {
                     <div>
                         Destination To: {flight.destinationTo}
                     </div>
+                    <button className="bb" onClick={()=>{
+                        handleBook();
+                    }}>Book</button>
                 </div>
             </div>
         </div>

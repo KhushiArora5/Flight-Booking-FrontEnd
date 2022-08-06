@@ -106,10 +106,10 @@ function Flight() {
                                         <div>
                                             <div>
                                                 {single.destinationTo}
-                                            </div>
                                             <button className="bb" onClick={() => {
                                                 window.location.href = "/flight/" + single._id;
                                             }}>Book This</button>
+                                            </div>
                                         </div>
                                     );
                                 })
@@ -118,7 +118,7 @@ function Flight() {
                     </div>
                 </div>
                 <p className="finfo">To proceed with the process of choosing your flight,
-                    please click on the BOOK A FLIGHT button.</p>
+                    please click on the <u>BOOK THIS</u> button.</p>
                 <div>
                     <img src={lines} className="flines" />
                 </div>

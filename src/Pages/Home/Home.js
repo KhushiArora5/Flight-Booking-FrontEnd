@@ -1,6 +1,8 @@
 import Navbar from '../../Components/Navbar/Navbar';
 import Footer from '../../Components/Footer/Footer';
 import './Home.css';
+// import Carousel from '../../Components/Carousel/Carousel';
+// import Show from '../../Components/Carousel/Slide';
 
 function Home() {
   return (
@@ -69,6 +71,8 @@ function Home() {
           </div>
         </div>
       </div>
+      {/* <Carousel />
+      <Show /> */}
       <Footer />
     </div>
   );
