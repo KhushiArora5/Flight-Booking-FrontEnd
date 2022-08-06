@@ -57,7 +57,7 @@ export default function Detail() {
                     <div>
                         Destination To: {flight.destinationTo}
                     </div>
-                    <button className="bb" onClick={()=>{
+                    <button className="db" onClick={()=>{
                         handleBook();
                     }}>Book</button>
                 </div>
