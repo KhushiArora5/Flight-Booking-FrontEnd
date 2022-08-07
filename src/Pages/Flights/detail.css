@@ -2,6 +2,11 @@
 {
     padding: 5px;
     font-family: 'Poppins',sans-serif;
-    font-size: large;
-    font-weight: 400;
+    font-size: 25px;
+    font-weight: 500;
+    border-radius: 10px;
+    border: 2px solid #c79d21;
+    background-color: #1178b8;
+    color: white;
+    margin-top: 20px;
 }

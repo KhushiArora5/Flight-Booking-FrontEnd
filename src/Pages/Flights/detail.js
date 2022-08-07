@@ -2,11 +2,14 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { useParams } from "react-router-dom";
 import Bar from "../../Components/Navbar/Bar";
+import './detail.css';
 
 export default function Detail() {
 
     const [flight, setFlight] = useState({});
     const { id } = useParams();
+    const [ID, setId] = useState();
+
     useEffect(() => {
         axios.defaults.headers = {
             auth: localStorage.getItem("token"),
@@ -26,7 +29,9 @@ export default function Detail() {
     }, []);
 
     async function handleBook() {
-          await axios.post(`http://localhost:4000/api/bookflight/${id}`, {}).then(function (response) {
+        setId(localStorage.getItem("userid"));
+        const userID = {ID};
+          await axios.post(`http://localhost:4000/api/bookflight/${id}`,userID).then(function (response) {
           if(response.data)
           {
             window.location.href = "/book";
@@ -38,8 +43,8 @@ export default function Detail() {
 
     return (
         <div>
-            <Bar />
-            <div className="bg">
+            <div className="bg h-screen">
+                <Bar />
                 <h1 className="ftitle text-center underline decoration-double">DETAILS OF THE FLIGHT</h1>
                 <div className="info">
                     <div>
@@ -57,6 +62,7 @@ export default function Detail() {
                     <div>
                         Destination To: {flight.destinationTo}
                     </div>
+                    <hr/>
                     <button className="db" onClick={()=>{
                         handleBook();
                     }}>Book</button>

@@ -15,6 +15,7 @@ function Login() {
           if(response.data.token)
           {
             localStorage.setItem("token",response.data.token);
+            localStorage.setItem("userid",response.data.userid);
             window.location.href = "/flight";
           }
       }).catch(function(error){

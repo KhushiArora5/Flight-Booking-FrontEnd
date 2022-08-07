@@ -40,7 +40,7 @@ function Flight() {
                                 flight.map((single) => {
                                     return (
                                         <div>
-                                            <div>
+                                            <div className="py-0.5">
                                                 {single.airline}
                                             </div>
                                         </div>
@@ -56,7 +56,7 @@ function Flight() {
                                 flight.map((single) => {
                                     return (
                                         <div>
-                                            <div>
+                                            <div className="py-0.5">
                                                 {single.flightName}
                                             </div>
                                         </div>
@@ -72,7 +72,7 @@ function Flight() {
                                 flight.map((single) => {
                                     return (
                                         <div>
-                                            <div>
+                                            <div className="py-0.5">
                                                 {single.flightNo}
                                             </div>
                                         </div>
@@ -88,7 +88,7 @@ function Flight() {
                                 flight.map((single) => {
                                     return (
                                         <div>
-                                            <div>
+                                            <div className="py-0.5">
                                                 {single.destinationFrom}
                                             </div>
                                         </div>
@@ -103,9 +103,10 @@ function Flight() {
                             {
                                 flight.map((single) => {
                                     return (
-                                        <div>
-                                            <div>
+                                        <div className="bookcol">
+                                            <div className="bookrow">
                                                 {single.destinationTo}
+                                                
                                             <button className="bb" onClick={() => {
                                                 window.location.href = "/flight/" + single._id;
                                             }}>Book This</button>
@@ -117,8 +118,10 @@ function Flight() {
                         </div>
                     </div>
                 </div>
+                <hr/>
                 <p className="finfo">To proceed with the process of choosing your flight,
                     please click on the <u>BOOK THIS</u> button.</p>
+                    <hr/>
                 <div>
                     <img src={lines} className="flines" />
                 </div>
