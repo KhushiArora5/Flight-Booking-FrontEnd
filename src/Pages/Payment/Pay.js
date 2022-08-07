@@ -1,7 +1,23 @@
+import { useState } from "react";
 import PBar from "../../Components/Navbar/PBar";
 import './Pay.css';
 
 function Pay() {
+    const [holder,setHolder] = useState(" ");
+    const [no,setNo] = useState(" ");
+    const [sc,setSC] = useState(" ");
+
+    function handleChange(){
+        if(holder && no && sc === " ")
+        {
+            alert("Please fill all the details");
+        }
+        else
+        {
+            alert("Payment is Successfully Done");
+        }
+    }
+
     return (
         <div>
             <div className="bg h-screen">
@@ -32,6 +48,9 @@ function Pay() {
                                             placeholder="Card holder"
                                             maxlength="22"
                                             x-model="cardholder"
+                                            onChange={(e) =>{
+                                                setHolder(e.target.value);
+                                            }}
                                         />
                                     </div>
                                     <div className="my-3">
@@ -40,6 +59,9 @@ function Pay() {
                                             className="block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
                                             placeholder="Card number"
                                             x-model="cardNumber"
+                                            onChange={(e) =>{
+                                                setNo(e.target.value);
+                                            }}
                                         />
                                     </div>
                                     <div className="my-3 flex flex-col">
@@ -48,8 +70,6 @@ function Pay() {
                                         </div>
                                         <div className="grid grid-cols-2 sm:grid-cols-4 gap-2">
                                             <select
-                                                name=""
-                                                id=""
                                                 className="form-select appearance-none block w-full px-5 py-2 border rounded-lg bg-white shadow-lg placeholder-gray-400 text-gray-700 focus:ring focus:outline-none"
                                                 x-model="expired.month"
                                             >
@@ -87,6 +107,9 @@ function Pay() {
                                                 placeholder="Security code"
                                                 maxlength="3"
                                                 x-model="securityCode"
+                                                onChange={(e) =>{
+                                                    setSC(e.target.value);
+                                                }}
                                             />
                                         </div>
                                     </div>
@@ -94,6 +117,9 @@ function Pay() {
                             </main>
                             <footer className="mt-6 p-4">
                                 <button
+                                    onClick={()=>{
+                                        handleChange();  
+                                    }}
                                     className="submit-button px-4 py-3 rounded-full bg-blue-300 text-blue-900 focus:ring focus:outline-none w-full text-xl font-semibold transition-colors">
                                     Pay now
                                 </button>
