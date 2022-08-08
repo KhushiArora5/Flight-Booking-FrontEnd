@@ -15,7 +15,7 @@ function Flight() {
         // console.log(localStorage.getItem("token"));
         async function fetchData() {
             try {
-                const data = (await axios.get("http://localhost:4000/api/allflights", {})).data;
+                const data = (await axios.get("https://flightbooking-ka.herokuapp.com/api/allflights", {})).data;
                 setflight(data);
                 // console.log(data);
             }

@@ -8,7 +8,6 @@ export default function Detail() {
 
     const [flight, setFlight] = useState({});
     const { id } = useParams();
-    const [ID, setId] = useState();
 
     useEffect(() => {
         axios.defaults.headers = {
@@ -17,7 +16,7 @@ export default function Detail() {
         // console.log(localStorage.getItem("token"));
         async function fetchData() {
             try {
-                const data = (await axios.get(`http://localhost:4000/api/findbyid/${id}`, {})).data;
+                const data = (await axios.get(`https://flightbooking-ka.herokuapp.com/api/findbyid/${id}`, {})).data;
                 setFlight(data);
                 console.log(data);
             }
@@ -29,16 +28,14 @@ export default function Detail() {
     }, []);
 
     async function handleBook() {
-        setId(localStorage.getItem("userid"));
-        const userID = {ID};
-          await axios.post(`http://localhost:4000/api/bookflight/${id}`,userID).then(function (response) {
-          if(response.data)
-          {
-            window.location.href = "/book";
-          }
-      }).catch(function(error){
-        console.log(error);
-      })
+        const userID = { id: localStorage.getItem("userid") };
+        await axios.post(`https://flightbooking-ka.herokuapp.com/api/bookflight/${id}`, userID).then(function (response) {
+            if (response.data) {
+                window.location.href = "/book";
+            }
+        }).catch(function (error) {
+            console.log(error);
+        })
     }
 
     return (
@@ -62,8 +59,8 @@ export default function Detail() {
                     <div>
                         Destination To: {flight.destinationTo}
                     </div>
-                    <hr/>
-                    <button className="db" onClick={()=>{
+                    <hr />
+                    <button className="db" onClick={() => {
                         handleBook();
                     }}>Book</button>
                 </div>

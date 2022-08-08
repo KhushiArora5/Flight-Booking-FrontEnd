@@ -17,7 +17,7 @@ function Signup() {
             useremail,
             password
           };
-          await axios.post("http://localhost:4000/api/signup", user).then(function (response) {
+          await axios.post("https://flightbooking-ka.herokuapp.com/api/signup", user).then(function (response) {
           if(response.data)
           {
             window.location.href = "/login";
