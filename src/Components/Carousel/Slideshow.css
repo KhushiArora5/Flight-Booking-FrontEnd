@@ -1,0 +1,31 @@
+#image 
+{
+  height: 500px;
+  width: 80%;
+  margin: 20px 130px;
+}
+
+.b
+{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 80%;
+  margin-left: 130px;
+}
+
+.sbtn 
+{
+  cursor: pointer;
+  align-items: center;
+  justify-content: center;
+  font-family: 'Poppins', sans-serif;
+  font-weight: 800;
+  font-size: 20px;
+  background: #c79d21;
+  border-radius: 6px;
+  height: 56px;
+  width: 190px;
+  margin-top: 10px;
+  color: white;
+}

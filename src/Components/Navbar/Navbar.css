@@ -46,3 +46,31 @@
     border-radius: 5px;
     margin: 2px;
 }
+
+@media only screen and (max-width: 600px)
+{
+    .l
+    {
+        display: none;
+    }
+    .ham
+    {
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 992px)
+{
+    .ham
+    {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 600px)
+{
+    .ham
+    {
+        display: none;
+    }
+}

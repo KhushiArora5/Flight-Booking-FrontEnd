@@ -1,0 +1,21 @@
+.icon 
+{
+    display: block;
+    right: 0;
+    top: 0;
+}
+
+.hamlinks 
+{
+    text-decoration: none;
+    color: #ffc820;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    padding: 10px 10px;
+    text-align: center;
+    background-color: rgb(251, 251, 233);
+    border-radius: 5px;
+    margin: 10px;
+    display: block;
+}

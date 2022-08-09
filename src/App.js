@@ -6,6 +6,8 @@ import Book from './Pages/Book/Book';
 import Flight from "./Pages/Flights/Flight";
 import Pay from "./Pages/Payment/Pay";
 import Detail from "./Pages/Flights/detail";
+import Show from "./Components/Carousel/Slideshow";
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route exact path="/flight/:id" element={<Detail />}></Route>
         </Routes>
       </Router>
+      {/* <Show/> */}
     </div>
   );
 }

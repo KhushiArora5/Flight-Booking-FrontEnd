@@ -32,6 +32,7 @@ export default function Detail() {
         await axios.post(`https://flightbooking-ka.herokuapp.com/api/bookflight/${id}`, userID).then(function (response) {
             if (response.data) {
                 window.location.href = "/book";
+                alert("Booking has been Confirmed");
             }
         }).catch(function (error) {
             console.log(error);
@@ -62,7 +63,7 @@ export default function Detail() {
                     <hr />
                     <button className="db" onClick={() => {
                         handleBook();
-                    }}>Book</button>
+                    }}>Confirm</button>
                 </div>
             </div>
         </div>
