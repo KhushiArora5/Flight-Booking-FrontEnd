@@ -5,6 +5,13 @@
     top: 0;
 }
 
+#list
+{
+    position: absolute;
+    right: 0;
+    top: 50px;
+}
+
 .hamlinks 
 {
     text-decoration: none;
@@ -18,4 +25,5 @@
     border-radius: 5px;
     margin: 10px;
     display: block;
+    
 }

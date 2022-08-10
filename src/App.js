@@ -7,6 +7,7 @@ import Flight from "./Pages/Flights/Flight";
 import Pay from "./Pages/Payment/Pay";
 import Detail from "./Pages/Flights/detail";
 import Show from "./Components/Carousel/Slideshow";
+import Navbar from "./Components/Navbar/Navbar";
 
 
 function App() {
