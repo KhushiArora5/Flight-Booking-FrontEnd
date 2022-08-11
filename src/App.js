@@ -6,7 +6,7 @@ import Book from './Pages/Book/Book';
 import Flight from "./Pages/Flights/Flight";
 import Pay from "./Pages/Payment/Pay";
 import Detail from "./Pages/Flights/detail";
-import Show from "./Components/Carousel/Slideshow";
+import Show from "./Components/Slideshow/Slideshow";
 import Navbar from "./Components/Navbar/Navbar";
 
 

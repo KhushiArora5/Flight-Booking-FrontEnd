@@ -1,4 +1,4 @@
-import Ham from '../hamburger/hamburger';
+import Ham from '../Hamburger/hamburger';
 import './Navbar.css';
 
 
