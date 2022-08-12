@@ -1,4 +1,4 @@
-// import Ham from '../Hamburger/hamburger.js';
+import Hamburger from '../Hamburger/hamburger.js';
 import './Navbar.css';
 
 
@@ -19,7 +19,7 @@ function Navbar() {
         <a className="links" href="/pay">PAYMENT</a>
       </div>
       <div className="ham">
-        {/* <Ham /> */}
+        <Hamburger/>
       </div>
       </div>
     </div>
