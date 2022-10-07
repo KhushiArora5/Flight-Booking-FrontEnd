@@ -10,7 +10,7 @@ function Book() {
                 <hr/>
                 <p className="binfo">
                     Your booking has been confirmed.<br/>
-                    Click on Payment Button to proceed with it.</p>
+                </p>
             </div>
         </div>
     );
