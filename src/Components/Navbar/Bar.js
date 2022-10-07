@@ -13,7 +13,7 @@ function Bar() {
         </svg></p>
       <div>
         <a className="blinks" href="/">HOME</a>
-        <a className="blinks" href="/pay">PAYMENT</a>
+        {/* <a className="blinks" href="/pay">PAYMENT</a> */}
       </div>
       </div>
     </div>

@@ -16,7 +16,7 @@ function Navbar() {
         <a className="links" href="/login">LOGIN</a>
         <a className="links" href="/signup">SIGNUP</a>
         <a className="links" href="/flight">INFO.</a>
-        <a className="links" href="/pay">PAYMENT</a>
+        {/* <a className="links" href="/pay">PAYMENT</a> */}
       </div>
       <div className="hb">
         {/* <Hamburger/> */}

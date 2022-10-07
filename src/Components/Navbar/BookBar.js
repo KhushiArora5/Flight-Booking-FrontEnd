@@ -14,7 +14,7 @@ function BookBar() {
       <div>
         <a className="bblinks" href="/">HOME</a>
         <a className="bblinks" href="/flight">INFO.</a>
-        <a className="bblinks" href="/pay">PAYMENT</a>
+        {/* <a className="bblinks" href="/pay">PAYMENT</a> */}
       </div>
       </div>
     </div>

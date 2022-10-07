@@ -4,10 +4,8 @@ import Login from './Pages/Login/Login';
 import Signup from './Pages/Signup/Signup';
 import Book from './Pages/Book/Book';
 import Flight from "./Pages/Flights/Flight";
-import Pay from "./Pages/Payment/Pay";
+// import Pay from "./Pages/Payment/Pay";
 import Detail from "./Pages/Flights/detail";
-import Show from "./Components/Slideshow/Slideshow";
-import Navbar from "./Components/Navbar/Navbar";
 
 
 function App() {
@@ -20,7 +18,7 @@ function App() {
           <Route exact path="/signup" element={<Signup />}></Route>
           <Route exact path="/book" element={<Book />}></Route>
           <Route exact path="/flight" element={<Flight />}></Route>
-          <Route exact path="/pay" element={<Pay />}></Route>
+          {/* <Route exact path="/pay" element={<Pay />}></Route> */}
           <Route exact path="/flight/:id" element={<Detail />}></Route>
         </Routes>
       </Router>
